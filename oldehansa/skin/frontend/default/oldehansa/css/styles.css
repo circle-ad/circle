@@ -27,7 +27,7 @@
 * { margin:0; padding:0; }
 
 
-body          { background:#F4E9DB ; font-family: 'ProximaNovaWeb'; color:#2f2f2f; text-align:center; }
+body          { background:#F4E9DB ; font-family: 'ProximaNovaLight'; color:#2f2f2f; text-align:center; }
 
 img           { border:0; vertical-align:top; }
 
@@ -510,15 +510,14 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Header ================================================================================ */
-.header .logo {height: 50px;}
+.header .logo {height: 245px;}
 .header .logo img {position: absolute; margin: auto; left: 0; right: 0; overflow: hidden;}
-.header-container { background-image:url(../images/header-background.png); background-repeat: repeat;}
-.quick-access-background { background-color: #3D2011; min-height: 37px;}
+.quick-access-background .header { background: #251107; height: auto;}
 .quick-access .col-sm-4 {min-height: 30px;}
 .quick-access .col-sm-3 {min-height: 30px;}
 .quick-access .col-sm-5 {min-height: 30px;}
 .quick-access .col-xs-6 {min-height: 30px; padding: 0px !important;}
-.header { max-width:940px; margin:0 auto; padding-top: 5px; text-align:center; position:relative; z-index:10; }
+.header { text-align:center; position:relative; z-index:10; height: 290px; background-image:url(../images/dark-bg.jpg); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
 .header .welcome-msg { margin:0; color:#fff; text-align:right; }
 .header .welcome-msg a { color:#ebbc58; }
 .header .form-search {width: 100%}
@@ -538,13 +537,13 @@ tr.summary-details-excluded { font-style:italic; }
 
 /********** < Navigation */
 .nav-container { background:#0a263d url(../images/bkg_nav0.jpg) 50% 0 repeat-y; display: inline-block; text-align: center; }
-#nav { max-width:940px;  font-size:13px; display: inline-block; text-align: center; text-decoration: none;}
+#nav { width: 100%; font-size:13px; display: inline-block; margin-left: 0 !important; text-align: center; text-decoration: none;}
 
 /* All Levels */ /* Style consistent throughout all nav levels */
-#nav li {text-align:left; }
-#nav li.over { z-index:998; }fo
+#nav li {text-align:left; display:inline-block;}
+#nav li.over { z-index:998; }
 #nav a,
-#nav a:hover { display:block; line-height:1.3em; text-decoration:none; }
+#nav a:hover { display:block; line-height:1.3em; text-decoration:none; background: transparent;}
 #nav span { display:block; cursor:pointer; white-space:nowrap; }
 #nav li ul span {white-space:normal; }
 #nav ul li.parent a { background:url(../images/bkg_nav2.gif) 100% 100% no-repeat; }
@@ -552,15 +551,15 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* 0 Level */
-#nav li { /*float:left;*/ }
+#nav li { float: none; }
 #nav li.active a { color:#d96708; }
-#nav a { /*float:left*/; padding:5px 12px 6px 8px; color:#3D2011; font-family: 'OldeHansaFont'; font-weight:bold; }
+#nav a { /*float:left*/; padding:5px 12px 6px; color:#e2d0b8; font-size:22px; font-family: 'OldeHansaFont'; font-weight:bold; }
 #nav li.over a,
-#nav a:hover { color:#d96708; background-color: #D4C0A9;}
+#nav a:hover { }
 
 /* 1st Level */
 #nav ul li,
-#nav ul li.active { float:none; margin:0 auto; padding-bottom:1px; background:#ecf3f6 url(../images/bkg_nav1.gif) 0 100% repeat-x; }
+#nav ul li.active { float:none; margin:0 auto; padding-bottom:1px; background:#ecf3f6 url(../images/bkg_nav1. gif) 0 100% repeat-x; }
 #nav ul li.last { background:#F4E9DB; padding-bottom:0; }
 
 #nav ul a,
@@ -686,9 +685,9 @@ tr.summary-details-excluded { font-style:italic; }
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-.block-currency ul li ul li { 
-  background: #555; 
-  display: block; 
+.block-currency ul li ul li {
+  background: #555;
+  display: block;
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
@@ -1739,7 +1738,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Footer ================================================================================ */
 .footer {color: white !important;}
-.footer-container { background-image: url(../images/footer-background.png);}
+.footer-container { background-image: url(../images/dark-bg.jpg); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;}
 .footer { max-width:940px; margin:0 auto; min-height: 200px; }
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
@@ -1876,4 +1875,7 @@ tr.summary-details-excluded { font-style:italic; }
        url('../font/ProximaNova-Reg-webfont.ttf'), /* Safari, Android, iOS */
        url('../font/ProximaNova-Reg-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../font/ProximaNova-Light.otf');
+}
